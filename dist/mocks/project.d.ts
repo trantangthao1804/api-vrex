@@ -1,0 +1,28 @@
+export declare const homeProject: {
+    name: string;
+    shortDescription: any;
+    fullDescription: string;
+    avatarUrl: string;
+    lat: number;
+    lng: number;
+    imageUrls: string;
+    investor: string;
+    scale: string;
+    salePolicy: string;
+    status: string;
+    numberOfFloors: number;
+    numberOfBlock: number;
+    facilityDescription: any;
+    videoUrl: string;
+    landingPageUrl: string;
+    attachmentUrls: string;
+    viewCount: number;
+    assignedUserId: number;
+    isHot: boolean;
+    address: string;
+    groundImageUrls: string;
+    minUnitPrice: number;
+    maxUnitPrice: number;
+    id: number;
+    detailUrl: string;
+}[];
