@@ -8,6 +8,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:3200',
       'https://VREX-DEMO.vercel.app/',
+      'https://VREX.vercel.app/',
     ],
     methods: ["GET","HEAD","PUT","PATCH","POST","DELETE","OPTIONS"],
     credentials: true,
