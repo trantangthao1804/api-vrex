@@ -12,13 +12,15 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const home_page_module_1 = require("./modules/home-page.module");
 const upload_module_1 = require("./modules/upload.module");
+const news_module_1 = require("./modules/news.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
             home_page_module_1.HomePageModule,
-            upload_module_1.UploadModule
+            upload_module_1.UploadModule,
+            news_module_1.NewsModule
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

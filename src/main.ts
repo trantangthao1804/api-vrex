@@ -12,6 +12,6 @@ async function bootstrap() {
   });
 
   configSwagger(app);
-  await app.listen(3000);project
+  await app.listen(3000);
 }
 bootstrap();

@@ -5,6 +5,7 @@ import {AppController} from './app.controller';
 import {AppService} from './app.service';
 import {HomePageModule} from './modules/home-page.module';
 import {UploadModule} from './modules/upload.module';
+import {NewsModule} from './modules/news.module';
 
 @Module({
     imports: [
@@ -12,7 +13,8 @@ import {UploadModule} from './modules/upload.module';
         //     rootPath: join(__dirname, '../', 'uploads'),
         // }),
         HomePageModule,
-        UploadModule
+        UploadModule,
+        NewsModule
     ],
     controllers: [AppController],
     providers: [AppService],

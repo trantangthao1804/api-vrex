@@ -5,6 +5,12 @@ const app_module_1 = require("./app.module");
 const api_docs_config_1 = require("./configs/api-docs.config");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
+    app.enableCors({
+        allowedHeaders: '*',
+        origin: '*',
+        methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE", "OPTIONS"],
+        credentials: true,
+    });
     (0, api_docs_config_1.configSwagger)(app);
     await app.listen(3000);
 }
